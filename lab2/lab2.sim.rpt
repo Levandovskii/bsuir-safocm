@@ -1,0 +1,303 @@
+Simulator report for lab2
+Fri Oct 09 13:52:03 2026
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 139 nodes    ;
+; Simulation Coverage         ;      92.81 % ;
+; Total Number of Transitions ; 35275        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      92.81 % ;
+; Total nodes checked                                 ; 139          ;
+; Total output ports checked                          ; 139          ;
+; Total output ports with complete 1/0-value coverage ; 129          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 10           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                          ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                       ; Output Port Name                                ; Output Port Type ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; |lab2|clk_in                                    ; |lab2|clk_in                                    ; pin_out          ;
+; |lab2|clk                                       ; |lab2|clk                                       ; out              ;
+; |lab2|clk_D                                     ; |lab2|clk_D                                     ; pin_out          ;
+; |lab2|DCa[15]                                   ; |lab2|DCa[15]                                   ; pin_out          ;
+; |lab2|DCa[14]                                   ; |lab2|DCa[14]                                   ; pin_out          ;
+; |lab2|DCa[13]                                   ; |lab2|DCa[13]                                   ; pin_out          ;
+; |lab2|DCa[12]                                   ; |lab2|DCa[12]                                   ; pin_out          ;
+; |lab2|DCa[11]                                   ; |lab2|DCa[11]                                   ; pin_out          ;
+; |lab2|DCa[10]                                   ; |lab2|DCa[10]                                   ; pin_out          ;
+; |lab2|DCa[9]                                    ; |lab2|DCa[9]                                    ; pin_out          ;
+; |lab2|DCa[8]                                    ; |lab2|DCa[8]                                    ; pin_out          ;
+; |lab2|DCa[7]                                    ; |lab2|DCa[7]                                    ; pin_out          ;
+; |lab2|DCa[6]                                    ; |lab2|DCa[6]                                    ; pin_out          ;
+; |lab2|DCa[5]                                    ; |lab2|DCa[5]                                    ; pin_out          ;
+; |lab2|DCa[4]                                    ; |lab2|DCa[4]                                    ; pin_out          ;
+; |lab2|DCa[3]                                    ; |lab2|DCa[3]                                    ; pin_out          ;
+; |lab2|DCa[2]                                    ; |lab2|DCa[2]                                    ; pin_out          ;
+; |lab2|DCa[1]                                    ; |lab2|DCa[1]                                    ; pin_out          ;
+; |lab2|DCa[0]                                    ; |lab2|DCa[0]                                    ; pin_out          ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|110    ; |lab2|block3:inst1|74161:inst|f74161:sub|110    ; regout           ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|107    ; |lab2|block3:inst1|74161:inst|f74161:sub|107    ; out0             ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|94     ; |lab2|block3:inst1|74161:inst|f74161:sub|94     ; out0             ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|99     ; |lab2|block3:inst1|74161:inst|f74161:sub|99     ; regout           ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|97     ; |lab2|block3:inst1|74161:inst|f74161:sub|97     ; out0             ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|84     ; |lab2|block3:inst1|74161:inst|f74161:sub|84     ; out0             ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|87     ; |lab2|block3:inst1|74161:inst|f74161:sub|87     ; regout           ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|90     ; |lab2|block3:inst1|74161:inst|f74161:sub|90     ; out0             ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|81     ; |lab2|block3:inst1|74161:inst|f74161:sub|81     ; out0             ;
+; |lab2|block3:inst1|74161:inst|f74161:sub|9      ; |lab2|block3:inst1|74161:inst|f74161:sub|9      ; regout           ;
+; |lab2|block3:inst1|16dmux:inst1|24              ; |lab2|block3:inst1|16dmux:inst1|24              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|22              ; |lab2|block3:inst1|16dmux:inst1|22              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|20              ; |lab2|block3:inst1|16dmux:inst1|20              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|14              ; |lab2|block3:inst1|16dmux:inst1|14              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|13              ; |lab2|block3:inst1|16dmux:inst1|13              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|12              ; |lab2|block3:inst1|16dmux:inst1|12              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|11              ; |lab2|block3:inst1|16dmux:inst1|11              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|10              ; |lab2|block3:inst1|16dmux:inst1|10              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|26              ; |lab2|block3:inst1|16dmux:inst1|26              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|27              ; |lab2|block3:inst1|16dmux:inst1|27              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|28              ; |lab2|block3:inst1|16dmux:inst1|28              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|29              ; |lab2|block3:inst1|16dmux:inst1|29              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|30              ; |lab2|block3:inst1|16dmux:inst1|30              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|31              ; |lab2|block3:inst1|16dmux:inst1|31              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|32              ; |lab2|block3:inst1|16dmux:inst1|32              ; out0             ;
+; |lab2|block3:inst1|16dmux:inst1|33              ; |lab2|block3:inst1|16dmux:inst1|33              ; out0             ;
+; |lab2|block_2:inst7|inst3                       ; |lab2|block_2:inst7|inst3                       ; out0             ;
+; |lab2|block_2:inst7|inst21                      ; |lab2|block_2:inst7|inst21                      ; out0             ;
+; |lab2|block_2:inst7|inst24                      ; |lab2|block_2:inst7|inst24                      ; out0             ;
+; |lab2|block_2:inst7|inst2                       ; |lab2|block_2:inst7|inst2                       ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|104 ; |lab2|block_2:inst7|74161:inst22|f74161:sub|104 ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|109 ; |lab2|block_2:inst7|74161:inst22|f74161:sub|109 ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|108 ; |lab2|block_2:inst7|74161:inst22|f74161:sub|108 ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|107 ; |lab2|block_2:inst7|74161:inst22|f74161:sub|107 ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|94  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|94  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|99  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|99  ; regout           ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|98  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|98  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|97  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|97  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|84  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|84  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|87  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|87  ; regout           ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|92  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|92  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|86  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|86  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|90  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|90  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|81  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|81  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|9   ; |lab2|block_2:inst7|74161:inst22|f74161:sub|9   ; regout           ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|75  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|75  ; out0             ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|77  ; |lab2|block_2:inst7|74161:inst22|f74161:sub|77  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|104 ; |lab2|block_2:inst7|74161:inst19|f74161:sub|104 ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|109 ; |lab2|block_2:inst7|74161:inst19|f74161:sub|109 ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|108 ; |lab2|block_2:inst7|74161:inst19|f74161:sub|108 ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|107 ; |lab2|block_2:inst7|74161:inst19|f74161:sub|107 ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|94  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|94  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|99  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|99  ; regout           ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|98  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|98  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|97  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|97  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|84  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|84  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|87  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|87  ; regout           ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|92  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|92  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|86  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|86  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|90  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|90  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|81  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|81  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|9   ; |lab2|block_2:inst7|74161:inst19|f74161:sub|9   ; regout           ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|75  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|75  ; out0             ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|77  ; |lab2|block_2:inst7|74161:inst19|f74161:sub|77  ; out0             ;
+; |lab2|block_1:inst|inst18                       ; |lab2|block_1:inst|inst18                       ; regout           ;
+; |lab2|block_1:inst|inst18~0                     ; |lab2|block_1:inst|inst18~0                     ; out0             ;
+; |lab2|block_1:inst|inst18~1                     ; |lab2|block_1:inst|inst18~1                     ; out0             ;
+; |lab2|block_1:inst|inst18~2                     ; |lab2|block_1:inst|inst18~2                     ; out0             ;
+; |lab2|block_1:inst|inst15                       ; |lab2|block_1:inst|inst15                       ; out0             ;
+; |lab2|block_1:inst|inst17                       ; |lab2|block_1:inst|inst17                       ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|104   ; |lab2|block_1:inst|74161:inst5|f74161:sub|104   ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|109   ; |lab2|block_1:inst|74161:inst5|f74161:sub|109   ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|108   ; |lab2|block_1:inst|74161:inst5|f74161:sub|108   ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|107   ; |lab2|block_1:inst|74161:inst5|f74161:sub|107   ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|106   ; |lab2|block_1:inst|74161:inst5|f74161:sub|106   ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|94    ; |lab2|block_1:inst|74161:inst5|f74161:sub|94    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|102   ; |lab2|block_1:inst|74161:inst5|f74161:sub|102   ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|98    ; |lab2|block_1:inst|74161:inst5|f74161:sub|98    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|97    ; |lab2|block_1:inst|74161:inst5|f74161:sub|97    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|96    ; |lab2|block_1:inst|74161:inst5|f74161:sub|96    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|84    ; |lab2|block_1:inst|74161:inst5|f74161:sub|84    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|87    ; |lab2|block_1:inst|74161:inst5|f74161:sub|87    ; regout           ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|86    ; |lab2|block_1:inst|74161:inst5|f74161:sub|86    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|90    ; |lab2|block_1:inst|74161:inst5|f74161:sub|90    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|89    ; |lab2|block_1:inst|74161:inst5|f74161:sub|89    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|81    ; |lab2|block_1:inst|74161:inst5|f74161:sub|81    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|9     ; |lab2|block_1:inst|74161:inst5|f74161:sub|9     ; regout           ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|75    ; |lab2|block_1:inst|74161:inst5|f74161:sub|75    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|77    ; |lab2|block_1:inst|74161:inst5|f74161:sub|77    ; out0             ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|78    ; |lab2|block_1:inst|74161:inst5|f74161:sub|78    ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|104    ; |lab2|block_1:inst|74161:inst|f74161:sub|104    ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|109    ; |lab2|block_1:inst|74161:inst|f74161:sub|109    ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|108    ; |lab2|block_1:inst|74161:inst|f74161:sub|108    ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|107    ; |lab2|block_1:inst|74161:inst|f74161:sub|107    ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|106    ; |lab2|block_1:inst|74161:inst|f74161:sub|106    ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|94     ; |lab2|block_1:inst|74161:inst|f74161:sub|94     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|99     ; |lab2|block_1:inst|74161:inst|f74161:sub|99     ; regout           ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|98     ; |lab2|block_1:inst|74161:inst|f74161:sub|98     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|97     ; |lab2|block_1:inst|74161:inst|f74161:sub|97     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|96     ; |lab2|block_1:inst|74161:inst|f74161:sub|96     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|84     ; |lab2|block_1:inst|74161:inst|f74161:sub|84     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|87     ; |lab2|block_1:inst|74161:inst|f74161:sub|87     ; regout           ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|92     ; |lab2|block_1:inst|74161:inst|f74161:sub|92     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|86     ; |lab2|block_1:inst|74161:inst|f74161:sub|86     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|90     ; |lab2|block_1:inst|74161:inst|f74161:sub|90     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|89     ; |lab2|block_1:inst|74161:inst|f74161:sub|89     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|81     ; |lab2|block_1:inst|74161:inst|f74161:sub|81     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|9      ; |lab2|block_1:inst|74161:inst|f74161:sub|9      ; regout           ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|77     ; |lab2|block_1:inst|74161:inst|f74161:sub|77     ; out0             ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|78     ; |lab2|block_1:inst|74161:inst|f74161:sub|78     ; out0             ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                             ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                       ; Output Port Name                                ; Output Port Type ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; |lab2|block_2:inst7|inst                        ; |lab2|block_2:inst7|inst                        ; out0             ;
+; |lab2|block_2:inst7|inst20                      ; |lab2|block_2:inst7|inst20                      ; regout           ;
+; |lab2|block_2:inst7|inst23                      ; |lab2|block_2:inst7|inst23                      ; regout           ;
+; |lab2|block_2:inst7|74161:inst22|f74161:sub|110 ; |lab2|block_2:inst7|74161:inst22|f74161:sub|110 ; regout           ;
+; |lab2|block_2:inst7|74161:inst19|f74161:sub|110 ; |lab2|block_2:inst7|74161:inst19|f74161:sub|110 ; regout           ;
+; |lab2|block_1:inst|inst14                       ; |lab2|block_1:inst|inst14                       ; regout           ;
+; |lab2|block_1:inst|inst16                       ; |lab2|block_1:inst|inst16                       ; regout           ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|110   ; |lab2|block_1:inst|74161:inst5|f74161:sub|110   ; regout           ;
+; |lab2|block_1:inst|74161:inst5|f74161:sub|99    ; |lab2|block_1:inst|74161:inst5|f74161:sub|99    ; regout           ;
+; |lab2|block_1:inst|74161:inst|f74161:sub|110    ; |lab2|block_1:inst|74161:inst|f74161:sub|110    ; regout           ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Fri Oct 09 13:52:02 2026
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off lab2 -c lab2
+Info: Using vector source file "C:/users/maxpast/Desktop/BSUIR-labs/SiFOVM/lab2/lab2.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "out1" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|lab2|block_1:inst|inst14"
+Warning: Found clock-sensitive change during active clock edge at time 50.0 ns on register "|lab2|block_1:inst|inst16"
+Warning: Found clock-sensitive change during active clock edge at time 650.0 ns on register "|lab2|block_2:inst7|inst20"
+Warning: Found clock-sensitive change during active clock edge at time 950.0 ns on register "|lab2|block_2:inst7|inst23"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      92.81 %
+Info: Number of transitions in simulation is 35275
+Info: Quartus II Simulator was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 96 megabytes
+    Info: Processing ended: Fri Oct 09 13:52:03 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

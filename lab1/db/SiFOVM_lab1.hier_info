@@ -1,0 +1,33 @@
+|SiFOVM_lab1
+y0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+c => inst.CLK
+c => inst1.CLK
+c => inst3.CLK
+c => inst2.CLK
+c => inst4.CLK
+c => inst5.CLK
+c => inst6.CLK
+c => inst7.CLK
+c => inst8.CLK
+c => inst9.CLK
+x0 => inst.DATAIN
+y1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x1 => inst1.DATAIN
+y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst3.DATAIN
+y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x3 => inst2.DATAIN
+y4 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+x4 => inst4.DATAIN
+y5 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+x5 => inst5.DATAIN
+y6 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+x6 => inst6.DATAIN
+y7 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+x7 => inst7.DATAIN
+y8 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+x8 => inst8.DATAIN
+y9 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+x9 => inst9.DATAIN
+
+

@@ -1,0 +1,176 @@
+GED
+
+	Undo Commands
+	     1.	Insert Node
+	     2.	Insert Node
+	     3.	Move
+	     4.	Move
+	     5.	Move
+	     6.	Move
+	     7.	Delete Insert
+	     8.	Insert Node
+	     9.	Delete
+	    10.	Insert Node
+	    11.	Insert Node
+	    12.	Move
+	    13.	Insert Node
+	    14.	Delete
+	    15.	Insert Node
+	    16.	Delete
+	    17.	Insert Node
+	    18.	Move
+	    19.	Move
+	    20.	Move
+	    21.	Move
+	    22.	Move
+	    23.	Move
+	    24.	Move
+	    25.	Move
+	    26.	Move
+	    27.	Move
+	    28.	Move
+	    29.	Move
+	    30.	Move
+	    31.	Move
+	    32.	Move
+	    33.	Move
+	    34.	Move
+	    35.	Move
+	    36.	Move
+	    37.	Paste
+	    38.	Delete
+	    39.	Move
+	    40.	Paste
+	    41.	Move
+	    42.	Move
+	    43.	Delete
+	    44.	Delete Insert
+	    45.	Move
+	    46.	Paste
+	    47.	Delete
+	    48.	Delete
+	    49.	Delete
+	    50.	Delete
+	    51.	Move
+	    52.	Insert Node
+	    53.	Insert Node
+	    54.	Insert Node
+	    55.	Insert Node
+	    56.	Delete
+	    57.	Move
+	    58.	Flip Vertical
+	    59.	Move
+	    60.	Paste
+	    61.	Move
+	    62.	Move
+	    63.	Flip Vertical
+	    64.	Flip Horizontal
+	    65.	Flip Horizontal
+	    66.	Move
+	    67.	Insert Symbol
+	    68.	Insert Bus
+	    69.	Insert Bus
+	    70.	Move
+	    71.	Move
+	    72.	Move
+	    73.	Move
+	    74.	Insert Symbol
+	    75.	Delete Insert
+	    76.	Delete Insert
+	    77.	Delete Insert
+	    78.	Insert Node
+	    79.	Insert Node
+	    80.	Delete Insert
+	    81.	Delete Insert
+	    82.	Properties
+	    83.	Move
+	    84.	Properties
+	    85.	Insert Node
+	    86.	Delete Insert
+	    87.	Delete
+	    88.	Delete
+	    89.	Insert Node
+	    90.	Insert Node
+	    91.	Insert Bus
+	    92.	Insert Bus
+	    93.	Insert Bus
+	    94.	Insert Node
+	    95.	Insert Node
+	    96.	Insert Node
+	    97.	Move
+	    98.	Insert Node
+	    99.	Delete
+	   100.	Delete
+
+
+WED
+
+	Undo Commands
+	     1.	Arbitrary Value
+			 *** 
+	     2.	Edit Waveform
+	     3.	Arbitrary Value
+			 *** 
+	     4.	Edit Waveform
+	     5.	Arbitrary Value
+			 *** 
+	     6.	Edit Waveform
+	     7.	Edit Waveform
+	     8.	Arbitrary Value
+			 *** 
+	     9.	Arbitrary Value
+			 *** 
+	    10.	Arbitrary Value
+			 *** 
+	    11.	Edit Waveform
+	    12.	Edit Waveform
+	    13.	Move Time Bar
+			 ***  *** 
+	    14.	Drop Node
+			 *** 
+	    15.	Drop Node
+			 *** 
+	    16.	Insert Node or Bus
+	    17.	Insert Node or Bus
+	    18.	Insert Node or Bus
+	    19.	Insert Node or Bus
+	    20.	Arbitrary Value
+			 *** 
+	    21.	Arbitrary Value
+			 *** 
+	    22.	Edit Waveform
+	    23.	Arbitrary Value
+			 *** 
+	    24.	Arbitrary Value
+			 *** 
+	    25.	Edit Waveform
+	    26.	Arbitrary Value
+			 *** 
+	    27.	Edit Waveform
+	    28.	Move Time Bar
+			 ***  *** 
+	    29.	Clock
+	    30.	End Time
+	    31.	Drop Node
+			 *** 
+	    32.	Insert Node or Bus
+
+
+RPW
+
+	Undo Commands
+	     1.	||Compilation Report||Flow Summary
+	     2.	||Compilation Report||Flow Settings
+	     3.	||Compilation Report||Flow Summary
+
+
+RPW
+
+	Undo Commands
+	     1.	||Simulation Report||Simulator||Simulation Waveforms
+	     2.	||Simulation Report||Simulator||Logical Memories|||lab3|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_4a71:auto_generated|ALTSYNCRAM
+	     3.	||Simulation Report||Simulator||Simulation Waveforms
+	     4.	||Simulation Report||Simulator||Logical Memories|||lab3|lpm_rom0:inst|altsyncram:altsyncram_component|altsyncram_rl51:auto_generated|ALTSYNCRAM
+	     5.	||Simulation Report||Simulator||Simulation Waveforms
+
+

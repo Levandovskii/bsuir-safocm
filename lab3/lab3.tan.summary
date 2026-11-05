@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.050 ns
+From           : read
+To             : lpm_ram_dq0:inst|altsyncram:altsyncram_component|altsyncram_e3d1:auto_generated|ram_block1a0~porta_datain_reg5
+From Clock     : --
+To Clock       : write
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.194 ns
+From           : lpm_ram_dq0:inst|altsyncram:altsyncram_component|altsyncram_e3d1:auto_generated|ram_block1a0~porta_address_reg5
+To             : ram[6]
+From Clock     : read
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.091 ns
+From           : read
+To             : data[7]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.358 ns
+From           : adress[2]
+To             : lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_p081:auto_generated|ram_block1a0~porta_address_reg2
+From Clock     : --
+To Clock       : read
+Failed Paths   : 0
+
+Type           : Clock Setup: 'write'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 138.24 MHz ( period = 7.234 ns )
+From           : lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_p081:auto_generated|ram_block1a0~porta_address_reg5
+To             : buffer:inst9|lpm_dff0:inst8|lpm_ff:lpm_ff_component|altshift_taps:dffs_rtl_0|shift_taps_f1m:auto_generated|altsyncram_k781:altsyncram2|ram_block3a0~porta_datain_reg5
+From Clock     : write
+To Clock       : write
+Failed Paths   : 0
+
+Type           : Clock Setup: 'read'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 138.24 MHz ( period = 7.234 ns )
+From           : lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_p081:auto_generated|ram_block1a0~porta_address_reg5
+To             : buffer:inst9|lpm_dff0:inst8|lpm_ff:lpm_ff_component|altshift_taps:dffs_rtl_0|shift_taps_f1m:auto_generated|altsyncram_k781:altsyncram2|ram_block3a0~porta_datain_reg5
+From Clock     : read
+To Clock       : read
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 138.24 MHz ( period = 7.234 ns )
+From           : lpm_rom0:inst8|altsyncram:altsyncram_component|altsyncram_p081:auto_generated|ram_block1a0~porta_address_reg5
+To             : buffer:inst9|lpm_dff0:inst8|lpm_ff:lpm_ff_component|altshift_taps:dffs_rtl_0|shift_taps_f1m:auto_generated|altsyncram_k781:altsyncram2|ram_block3a0~porta_datain_reg5
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
