@@ -44,7 +44,6 @@ ENTITY lpm_dff_7 IS
 	(
 		clock		: IN STD_LOGIC ;
 		data		: IN STD_LOGIC_VECTOR (6 DOWNTO 0);
-		enable		: IN STD_LOGIC ;
 		q		: OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
 	);
 END lpm_dff_7;
@@ -63,7 +62,6 @@ ARCHITECTURE SYN OF lpm_dff_7 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			enable	: IN STD_LOGIC ;
 			clock	: IN STD_LOGIC ;
 			q	: OUT STD_LOGIC_VECTOR (6 DOWNTO 0);
 			data	: IN STD_LOGIC_VECTOR (6 DOWNTO 0)
@@ -80,7 +78,6 @@ BEGIN
 		lpm_width => 7
 	)
 	PORT MAP (
-		enable => enable,
 		clock => clock,
 		data => data,
 		q => sub_wire0
@@ -97,7 +94,7 @@ END SYN;
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
+-- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: DFF NUMERIC "1"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -112,11 +109,9 @@ END SYN;
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "7"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 -- Retrieval info: USED_PORT: data 0 0 7 0 INPUT NODEFVAL data[6..0]
--- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
 -- Retrieval info: USED_PORT: q 0 0 7 0 OUTPUT NODEFVAL q[6..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 7 0 @q 0 0 7 0
--- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 -- Retrieval info: CONNECT: @data 0 0 7 0 data 0 0 7 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff_7.vhd TRUE
