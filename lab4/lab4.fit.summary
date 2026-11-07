@@ -1,4 +1,4 @@
-Fitter Status : Successful - Fri Nov 06 15:18:34 2026
+Fitter Status : Successful - Sun Nov 08 01:08:11 2026
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
 Revision Name : lab4
 Top-level Entity Name : lab4
@@ -6,9 +6,9 @@ Family : Stratix II
 Device : EP2S15F484C3
 Timing Models : Final
 Logic utilization : < 1 %
-    Combinational ALUTs : 58 / 12,480 ( < 1 % )
-    Dedicated logic registers : 41 / 12,480 ( < 1 % )
-Total registers : 41
+    Combinational ALUTs : 57 / 12,480 ( < 1 % )
+    Dedicated logic registers : 40 / 12,480 ( < 1 % )
+Total registers : 40
 Total pins : 29 / 343 ( 8 % )
 Total virtual pins : 0
 Total block memory bits : 1,152 / 419,328 ( < 1 % )
