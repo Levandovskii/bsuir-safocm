@@ -33,13 +33,13 @@
 //applicable agreement for further details.
 
 
-//lpm_ff LPM_FFTYPE="DFF" LPM_WIDTH=9 clock data enable q
+//lpm_ff LPM_FFTYPE="DFF" LPM_WIDTH=8 clock data enable q
 //VERSION_BEGIN 9.1 cbx_lpm_ff 2009:10:21:21:22:16:SJ cbx_mgl 2009:10:21:21:37:49:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
-//synthesis_resources = lut 9 
+//synthesis_resources = lut 8 
 //synopsys translate_off
 `timescale 1 ps / 1 ps
 //synopsys translate_on
@@ -50,19 +50,19 @@ module  lpm_dff1_ff
 	enable,
 	q) /* synthesis synthesis_clearbox=1 */;
 	input   clock;
-	input   [8:0]  data;
+	input   [7:0]  data;
 	input   enable;
-	output   [8:0]  q;
+	output   [7:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
-	tri0   [8:0]  data;
+	tri0   [7:0]  data;
 	tri1   enable;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
 
-	reg	[8:0]	ff_dffe;
+	reg	[7:0]	ff_dffe;
 
 	// synopsys translate_off
 	initial
@@ -86,12 +86,12 @@ module lpm_dff1 (
 	q)/* synthesis synthesis_clearbox = 1 */;
 
 	input	  clock;
-	input	[8:0]  data;
+	input	[7:0]  data;
 	input	  enable;
-	output	[8:0]  q;
+	output	[7:0]  q;
 
-	wire [8:0] sub_wire0;
-	wire [8:0] q = sub_wire0[8:0];
+	wire [7:0] sub_wire0;
+	wire [7:0] q = sub_wire0[7:0];
 
 	lpm_dff1_ff	lpm_dff1_ff_component (
 				.enable (enable),
@@ -117,18 +117,18 @@ endmodule
 // Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
 // Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
-// Retrieval info: PRIVATE: nBit NUMERIC "9"
+// Retrieval info: PRIVATE: nBit NUMERIC "8"
 // Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
-// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "9"
+// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
-// Retrieval info: USED_PORT: data 0 0 9 0 INPUT NODEFVAL data[8..0]
+// Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
 // Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
-// Retrieval info: USED_PORT: q 0 0 9 0 OUTPUT NODEFVAL q[8..0]
+// Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 9 0 @q 0 0 9 0
+// Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
 // Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
-// Retrieval info: CONNECT: @data 0 0 9 0 data 0 0 9 0
+// Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 // Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.tdf TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.inc FALSE
