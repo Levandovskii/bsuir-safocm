@@ -2,4 +2,4 @@
 *.tar.gz
 **/db/*
 **/incremental_db/*
-
+test/
