@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.1"))
 (symbol
 	(rect 0 0 144 96)
-	(text "lpm_dff1" (rect 47 1 106 17)(font "Arial" (font_size 10)))
+	(text "lpm_dff9_en" (rect 47 1 106 17)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
