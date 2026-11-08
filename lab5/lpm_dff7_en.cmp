@@ -13,7 +13,7 @@
 --applicable agreement for further details.
 
 
-component lpm_dff1
+component lpm_dff7_en
 	PORT
 	(
 		clock		: IN STD_LOGIC ;

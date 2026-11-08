@@ -4,7 +4,7 @@
 -- MODULE: lpm_ff 
 
 -- ============================================================
--- File Name: lpm_dff1.tdf
+-- File Name: lpm_dff9_en.vhd
 -- Megafunction Name(s):
 -- 			lpm_ff
 --
@@ -32,35 +32,63 @@
 --Altera or its authorized distributors.  Please refer to the 
 --applicable agreement for further details.
 
-INCLUDE "lpm_ff.inc";
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+LIBRARY lpm;
+USE lpm.all;
+
+ENTITY lpm_dff9_en IS
+	PORT
+	(
+		clock		: IN STD_LOGIC ;
+		data		: IN STD_LOGIC_VECTOR (8 DOWNTO 0);
+		enable		: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (8 DOWNTO 0)
+	);
+END lpm_dff9_en;
+
+
+ARCHITECTURE SYN OF lpm_dff9_en IS
+
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (8 DOWNTO 0);
 
 
 
-SUBDESIGN lpm_dff1
-(
-	clock	 : INPUT;
-	data[7..0]	 : INPUT;
-	enable	 : INPUT;
-	q[7..0]	 : OUTPUT;
-)
-
-VARIABLE
-
-	lpm_ff_component : lpm_ff WITH (
-			LPM_FFTYPE = "DFF",
-			LPM_TYPE = "LPM_FF",
-			LPM_WIDTH = 8
-			);
+	COMPONENT lpm_ff
+	GENERIC (
+		lpm_fftype		: STRING;
+		lpm_type		: STRING;
+		lpm_width		: NATURAL
+	);
+	PORT (
+			enable	: IN STD_LOGIC ;
+			clock	: IN STD_LOGIC ;
+			q	: OUT STD_LOGIC_VECTOR (8 DOWNTO 0);
+			data	: IN STD_LOGIC_VECTOR (8 DOWNTO 0)
+	);
+	END COMPONENT;
 
 BEGIN
+	q    <= sub_wire0(8 DOWNTO 0);
 
-	q[7..0] = lpm_ff_component.q[7..0];
-	lpm_ff_component.enable = enable;
-	lpm_ff_component.clock = clock;
-	lpm_ff_component.data[7..0] = data[7..0];
-END;
+	lpm_ff_component : lpm_ff
+	GENERIC MAP (
+		lpm_fftype => "DFF",
+		lpm_type => "LPM_FF",
+		lpm_width => 9
+	)
+	PORT MAP (
+		enable => enable,
+		clock => clock,
+		data => data,
+		q => sub_wire0
+	);
 
 
+
+END SYN;
 
 -- ============================================================
 -- CNX file retrieval info
@@ -78,23 +106,23 @@ END;
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
 -- Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "8"
+-- Retrieval info: PRIVATE: nBit NUMERIC "9"
 -- Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "9"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
--- Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
+-- Retrieval info: USED_PORT: data 0 0 9 0 INPUT NODEFVAL data[8..0]
 -- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
--- Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
+-- Retrieval info: USED_PORT: q 0 0 9 0 OUTPUT NODEFVAL q[8..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
+-- Retrieval info: CONNECT: q 0 0 9 0 @q 0 0 9 0
 -- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
--- Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
+-- Retrieval info: CONNECT: @data 0 0 9 0 data 0 0 9 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.tdf TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.inc FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.bsf TRUE FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1_inst.tdf TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1_syn.v TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.vhd TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.inc FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.cmp TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en_inst.vhd FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en_syn.v TRUE
 -- Retrieval info: LIB_FILE: lpm

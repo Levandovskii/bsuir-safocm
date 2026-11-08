@@ -4,7 +4,7 @@
 // MODULE: lpm_ff 
 
 // ============================================================
-// File Name: lpm_dff1.v
+// File Name: lpm_dff9_en.v
 // Megafunction Name(s):
 // 			lpm_ff
 //
@@ -33,36 +33,36 @@
 //applicable agreement for further details.
 
 
-//lpm_ff LPM_FFTYPE="DFF" LPM_WIDTH=8 clock data enable q
+//lpm_ff LPM_FFTYPE="DFF" LPM_WIDTH=9 clock data enable q
 //VERSION_BEGIN 9.1 cbx_lpm_ff 2009:10:21:21:22:16:SJ cbx_mgl 2009:10:21:21:37:49:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
 
 
-//synthesis_resources = lut 8 
+//synthesis_resources = lut 9 
 //synopsys translate_off
 `timescale 1 ps / 1 ps
 //synopsys translate_on
-module  lpm_dff1_ff
+module  lpm_dff9_en_ff
 	( 
 	clock,
 	data,
 	enable,
 	q) /* synthesis synthesis_clearbox=1 */;
 	input   clock;
-	input   [7:0]  data;
+	input   [8:0]  data;
 	input   enable;
-	output   [7:0]  q;
+	output   [8:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
-	tri0   [7:0]  data;
+	tri0   [8:0]  data;
 	tri1   enable;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
 
-	reg	[7:0]	ff_dffe;
+	reg	[8:0]	ff_dffe;
 
 	// synopsys translate_off
 	initial
@@ -72,28 +72,28 @@ module  lpm_dff1_ff
 		if (enable == 1'b1)   ff_dffe <= data;
 	assign
 		q = ff_dffe;
-endmodule //lpm_dff1_ff
+endmodule //lpm_dff9_en_ff
 //VALID FILE
 
 
 // synopsys translate_off
 `timescale 1 ps / 1 ps
 // synopsys translate_on
-module lpm_dff1 (
+module lpm_dff9_en (
 	clock,
 	data,
 	enable,
 	q)/* synthesis synthesis_clearbox = 1 */;
 
 	input	  clock;
-	input	[7:0]  data;
+	input	[8:0]  data;
 	input	  enable;
-	output	[7:0]  q;
+	output	[8:0]  q;
 
-	wire [7:0] sub_wire0;
-	wire [7:0] q = sub_wire0[7:0];
+	wire [8:0] sub_wire0;
+	wire [8:0] q = sub_wire0[8:0];
 
-	lpm_dff1_ff	lpm_dff1_ff_component (
+	lpm_dff9_en_ff	lpm_dff9_en_ff_component (
 				.enable (enable),
 				.clock (clock),
 				.data (data),
@@ -117,23 +117,23 @@ endmodule
 // Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
 // Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
-// Retrieval info: PRIVATE: nBit NUMERIC "8"
+// Retrieval info: PRIVATE: nBit NUMERIC "9"
 // Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
-// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
+// Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "9"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
-// Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
+// Retrieval info: USED_PORT: data 0 0 9 0 INPUT NODEFVAL data[8..0]
 // Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
-// Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
+// Retrieval info: USED_PORT: q 0 0 9 0 OUTPUT NODEFVAL q[8..0]
 // Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
+// Retrieval info: CONNECT: q 0 0 9 0 @q 0 0 9 0
 // Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
-// Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
+// Retrieval info: CONNECT: @data 0 0 9 0 data 0 0 9 0
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
-// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.tdf TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.inc FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.cmp TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1.bsf TRUE FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1_inst.tdf TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff1_syn.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.vhd TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.inc FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.cmp TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en.bsf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en_inst.vhd FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff9_en_syn.v TRUE
 // Retrieval info: LIB_FILE: lpm

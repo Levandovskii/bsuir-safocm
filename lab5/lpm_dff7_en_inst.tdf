@@ -1,6 +1,6 @@
 (
 	q_sig[]
-) = lpm_dff1	(
+) = lpm_dff7_en	(
 	.clock = clock_sig,
 	.data[] = data_sig[],
 	.enable = enable_sig

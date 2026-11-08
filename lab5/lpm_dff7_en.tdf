@@ -4,7 +4,7 @@
 -- MODULE: lpm_ff 
 
 -- ============================================================
--- File Name: lpm_dff0.vhd
+-- File Name: lpm_dff7_en.tdf
 -- Megafunction Name(s):
 -- 			lpm_ff
 --
@@ -32,60 +32,35 @@
 --Altera or its authorized distributors.  Please refer to the 
 --applicable agreement for further details.
 
-
-LIBRARY ieee;
-USE ieee.std_logic_1164.all;
-
-LIBRARY lpm;
-USE lpm.all;
-
-ENTITY lpm_dff0 IS
-	PORT
-	(
-		clock		: IN STD_LOGIC ;
-		data		: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
-		q		: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
-	);
-END lpm_dff0;
-
-
-ARCHITECTURE SYN OF lpm_dff0 IS
-
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (1 DOWNTO 0);
+INCLUDE "lpm_ff.inc";
 
 
 
-	COMPONENT lpm_ff
-	GENERIC (
-		lpm_fftype		: STRING;
-		lpm_type		: STRING;
-		lpm_width		: NATURAL
-	);
-	PORT (
-			clock	: IN STD_LOGIC ;
-			q	: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
-			data	: IN STD_LOGIC_VECTOR (1 DOWNTO 0)
-	);
-	END COMPONENT;
+SUBDESIGN lpm_dff7_en
+(
+	clock	 : INPUT;
+	data[7..0]	 : INPUT;
+	enable	 : INPUT;
+	q[7..0]	 : OUTPUT;
+)
+
+VARIABLE
+
+	lpm_ff_component : lpm_ff WITH (
+			LPM_FFTYPE = "DFF",
+			LPM_TYPE = "LPM_FF",
+			LPM_WIDTH = 8
+			);
 
 BEGIN
-	q    <= sub_wire0(1 DOWNTO 0);
 
-	lpm_ff_component : lpm_ff
-	GENERIC MAP (
-		lpm_fftype => "DFF",
-		lpm_type => "LPM_FF",
-		lpm_width => 2
-	)
-	PORT MAP (
-		clock => clock,
-		data => data,
-		q => sub_wire0
-	);
+	q[7..0] = lpm_ff_component.q[7..0];
+	lpm_ff_component.enable = enable;
+	lpm_ff_component.clock = clock;
+	lpm_ff_component.data[7..0] = data[7..0];
+END;
 
 
-
-END SYN;
 
 -- ============================================================
 -- CNX file retrieval info
@@ -94,7 +69,7 @@ END SYN;
 -- Retrieval info: PRIVATE: ALOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET NUMERIC "0"
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
--- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
+-- Retrieval info: PRIVATE: CLK_EN NUMERIC "1"
 -- Retrieval info: PRIVATE: DFF NUMERIC "1"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
@@ -103,21 +78,23 @@ END SYN;
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
 -- Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "2"
+-- Retrieval info: PRIVATE: nBit NUMERIC "8"
 -- Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
--- Retrieval info: USED_PORT: data 0 0 2 0 INPUT NODEFVAL data[1..0]
--- Retrieval info: USED_PORT: q 0 0 2 0 OUTPUT NODEFVAL q[1..0]
+-- Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
+-- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
+-- Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 2 0 @q 0 0 2 0
--- Retrieval info: CONNECT: @data 0 0 2 0 data 0 0 2 0
+-- Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
+-- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
+-- Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0.vhd TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0.inc FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0.bsf TRUE FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0_inst.vhd FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0_syn.v TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff7_en.tdf TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff7_en.inc FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff7_en.cmp TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff7_en.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff7_en_inst.tdf TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff7_en_syn.v TRUE
 -- Retrieval info: LIB_FILE: lpm
