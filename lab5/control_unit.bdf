@@ -739,23 +739,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 224 -1464 256 -1432)
-	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
-	(text "inst28" (rect 3 21 32 33)(font "Arial" )(invisible))
-	(port
-		(pt 16 0)
-		(output)
-		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
-		(line (pt 16 8)(pt 16 0)(line_width 1))
-	)
-	(drawing
-		(line (pt 8 8)(pt 16 16)(line_width 1))
-		(line (pt 16 16)(pt 24 8)(line_width 1))
-		(line (pt 8 8)(pt 24 8)(line_width 1))
-	)
-)
-(symbol
 	(rect 608 -1120 752 -1024)
 	(text "lpm_dff1" (rect 47 1 106 17)(font "Arial" (font_size 10)))
 	(text "data_register" (rect 8 80 71 92)(font "Arial" ))
@@ -1208,53 +1191,6 @@ applicable agreement for further details.
 	(pt 264 -1240)
 )
 (connector
-	(pt 272 -1480)
-	(pt 272 -1392)
-	(bus)
-)
-(connector
-	(pt 240 -1480)
-	(pt 240 -1464)
-)
-(connector
-	(pt 272 -1496)
-	(pt 272 -1480)
-	(bus)
-)
-(connector
-	(pt 240 -1512)
-	(pt 240 -1496)
-)
-(connector
-	(pt 240 -1496)
-	(pt 240 -1480)
-)
-(connector
-	(pt 272 -1528)
-	(pt 272 -1512)
-	(bus)
-)
-(connector
-	(pt 272 -1512)
-	(pt 272 -1496)
-	(bus)
-)
-(connector
-	(text "cb[1]" (rect 242 -1528 266 -1516)(font "Arial" ))
-	(pt 240 -1512)
-	(pt 272 -1512)
-)
-(connector
-	(text "cb[3]" (rect 242 -1512 266 -1500)(font "Arial" ))
-	(pt 240 -1496)
-	(pt 272 -1496)
-)
-(connector
-	(text "cb[4]" (rect 242 -1496 266 -1484)(font "Arial" ))
-	(pt 240 -1480)
-	(pt 272 -1480)
-)
-(connector
 	(text "csb[4]" (rect 104 -1264 134 -1252)(font "Arial" ))
 	(pt 96 -1248)
 	(pt 128 -1248)
@@ -1456,6 +1392,11 @@ applicable agreement for further details.
 	(pt 760 -1376)
 	(bus)
 )
+(connector
+	(pt 272 -1528)
+	(pt 272 -1392)
+	(bus)
+)
 (junction (pt 96 -1336))
 (junction (pt 96 -1320))
 (junction (pt 96 -1304))
@@ -1466,11 +1407,6 @@ applicable agreement for further details.
 (junction (pt 272 -1352))
 (junction (pt 56 -1040))
 (junction (pt 96 -1248))
-(junction (pt 272 -1480))
-(junction (pt 240 -1480))
-(junction (pt 272 -1496))
-(junction (pt 240 -1496))
-(junction (pt 272 -1512))
 (junction (pt 288 -928))
 (junction (pt 288 -1024))
 (junction (pt 288 -972))
