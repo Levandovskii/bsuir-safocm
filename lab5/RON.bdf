@@ -118,6 +118,22 @@ applicable agreement for further details.
 	(text "VCC" (rect -1 136 9 156)(font "Arial" (font_size 6))(vertical))
 )
 (pin
+	(output)
+	(rect 792 432 968 448)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "r1_out[8..0]" (rect 90 0 146 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
 	(bidir)
 	(rect 376 -40 392 136)
 	(text "BIDIR" (rect 6 151 16 175)(font "Arial" (font_size 6))(vertical))
@@ -1023,11 +1039,6 @@ applicable agreement for further details.
 	(pt 600 448)
 )
 (connector
-	(pt 760 440)
-	(pt 776 440)
-	(bus)
-)
-(connector
 	(pt 616 584)
 	(pt 600 584)
 )
@@ -1808,6 +1819,16 @@ applicable agreement for further details.
 	(pt 120 576)
 	(pt 216 576)
 )
+(connector
+	(pt 760 440)
+	(pt 776 440)
+	(bus)
+)
+(connector
+	(pt 776 440)
+	(pt 792 440)
+	(bus)
+)
 (junction (pt 584 1112))
 (junction (pt 584 976))
 (junction (pt 584 840))
@@ -1851,3 +1872,4 @@ applicable agreement for further details.
 (junction (pt 184 296))
 (junction (pt 168 312))
 (junction (pt 152 328))
+(junction (pt 776 440))

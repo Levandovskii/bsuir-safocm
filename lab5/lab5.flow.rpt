@@ -1,5 +1,5 @@
 Flow report for lab5
-Sun Nov 08 18:18:26 2026
+Mon Nov 09 14:45:17 2026
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Flow Summary                                                            ;
 +-------------------------------+-----------------------------------------+
-; Flow Status                   ; Successful - Sun Nov 08 18:18:26 2026   ;
+; Flow Status                   ; Successful - Mon Nov 09 14:45:17 2026   ;
 ; Quartus II Version            ; 9.1 Build 222 10/21/2009 SJ Web Edition ;
 ; Revision Name                 ; lab5                                    ;
 ; Top-level Entity Name         ; lab5                                    ;
 ; Family                        ; Stratix II                              ;
 ; Met timing requirements       ; No                                      ;
-; Logic utilization             ; < 1 %                                   ;
-;     Combinational ALUTs       ; 57 / 12,480 ( < 1 % )                   ;
-;     Dedicated logic registers ; 40 / 12,480 ( < 1 % )                   ;
-; Total registers               ; 40                                      ;
-; Total pins                    ; 29 / 343 ( 8 % )                        ;
+; Logic utilization             ; 1 %                                     ;
+;     Combinational ALUTs       ; 166 / 12,480 ( 1 % )                    ;
+;     Dedicated logic registers ; 114 / 12,480 ( < 1 % )                  ;
+; Total registers               ; 114                                     ;
+; Total pins                    ; 54 / 343 ( 16 % )                       ;
 ; Total virtual pins            ; 0                                       ;
 ; Total block memory bits       ; 1,152 / 419,328 ( < 1 % )               ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2026 18:18:17 ;
+; Start date & time ; 11/09/2026 14:45:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5                ;
 +-------------------+---------------------+
@@ -75,9 +75,19 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 145862340580450.179415109700644 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 145862340580450.179422470601236 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_CONSTANT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CLSHIFT                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_XOR                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_dff_9.bsf                   ; --            ; --          ; --             ;
@@ -85,6 +95,21 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_constant0.bsf               ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_constant0_inst.vhd          ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_constant0.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub0.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub0_syn.v              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_clshift0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_clshift0.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_clshift0_syn.v              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_xor9.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_xor9.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_xor9_syn.v                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux9.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux9.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux9_syn.v                  ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0_syn.v                  ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; --          ; Top            ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
@@ -96,11 +121,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 184 MB              ; 213503982:08:01:49                 ;
-; Fitter                  ; 00:00:04     ; 1.0                     ; 175 MB              ; 213503982:08:01:49                 ;
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 180 MB              ; 213503982:08:01:49                 ;
+; Fitter                  ; 00:00:04     ; 1.0                     ; 189 MB              ; 213503982:08:01:49                 ;
 ; Assembler               ; 00:00:01     ; 1.0                     ; 109 MB              ; 00:00:01                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 96 MB               ; 213503982:08:01:49                 ;
-; Total                   ; 00:00:07     ; --                      ; --                  ; 213503982:08:01:49                 ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 96 MB               ; 213503982:08:01:49                 ;
+; Total                   ; 00:00:09     ; --                      ; --                  ; 213503982:08:01:49                 ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
