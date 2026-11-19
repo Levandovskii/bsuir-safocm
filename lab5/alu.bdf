@@ -600,6 +600,21 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8)(line_width 1))
 	)
 )
+(symbol
+	(rect 1272 288 1304 304)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst9" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8)(line_width 1))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8)(line_width 1))
+	)
+)
 (connector
 	(text "data[8..0]" (rect 400 152 447 164)(font "Arial" ))
 	(pt 440 168)
@@ -874,14 +889,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1288 328)
-	(pt 1320 328)
-)
-(connector
-	(pt 1288 328)
-	(pt 1288 376)
-)
-(connector
 	(pt 1288 376)
 	(pt 1288 392)
 )
@@ -900,6 +907,13 @@ applicable agreement for further details.
 	(pt 1320 344)
 	(pt 1232 344)
 )
+(connector
+	(pt 1288 304)
+	(pt 1288 328)
+)
+(connector
+	(pt 1288 328)
+	(pt 1320 328)
+)
 (junction (pt 784 296))
 (junction (pt 784 240))
-(junction (pt 1288 376))

@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 176 176)
+	(rect 16 16 184 176)
 	(text "RON" (rect 5 0 34 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
@@ -66,13 +66,20 @@ applicable agreement for further details.
 		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
 	(port
-		(pt 160 32)
+		(pt 168 48)
+		(output)
+		(text "r1_out[8..0]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "r1_out[8..0]" (rect 83 43 147 57)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 3))
+	)
+	(port
+		(pt 168 32)
 		(bidir)
 		(text "data[8..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[8..0]" (rect 86 27 139 41)(font "Arial" (font_size 8)))
-		(line (pt 160 32)(pt 144 32)(line_width 3))
+		(text "data[8..0]" (rect 94 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 144)(line_width 1))
+		(rectangle (rect 16 16 152 144)(line_width 1))
 	)
 )
