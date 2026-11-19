@@ -235,7 +235,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1552 104 1632 144)
+	(rect 1520 104 1600 144)
 	(text "lpm_bustri1" (rect 7 1 86 17)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 24 25 36)(font "Arial" ))
 	(port
@@ -584,7 +584,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 768 344 800 376)
+	(rect 768 352 800 384)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 21 26 33)(font "Arial" )(invisible))
 	(port
@@ -597,21 +597,6 @@ applicable agreement for further details.
 	(drawing
 		(line (pt 8 8)(pt 16 16)(line_width 1))
 		(line (pt 16 16)(pt 24 8)(line_width 1))
-		(line (pt 8 8)(pt 24 8)(line_width 1))
-	)
-)
-(symbol
-	(rect 1272 288 1304 304)
-	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
-	(text "inst9" (rect 3 5 26 17)(font "Arial" )(invisible))
-	(port
-		(pt 16 16)
-		(output)
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
-		(line (pt 16 16)(pt 16 8)(line_width 1))
-	)
-	(drawing
 		(line (pt 8 8)(pt 24 8)(line_width 1))
 	)
 )
@@ -685,17 +670,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "alu_out_r" (rect 1576 144 1588 188)(font "Arial" )(vertical))
-	(pt 1592 144)
-	(pt 1592 192)
-)
-(connector
-	(text "data[8..0]" (rect 1632 112 1679 124)(font "Arial" ))
-	(pt 1632 128)
-	(pt 1664 128)
-	(bus)
-)
-(connector
 	(pt 1408 352)
 	(pt 1440 352)
 )
@@ -736,61 +710,9 @@ applicable agreement for further details.
 	(pt 1288 376)
 )
 (connector
-	(text "shift_res[9..0]" (rect 1040 280 1108 292)(font "Arial" ))
-	(pt 1032 296)
-	(pt 1088 296)
-	(bus)
-)
-(connector
-	(pt 760 296)
-	(pt 784 296)
-	(bus)
-)
-(connector
-	(text "shift_in[9..0]" (rect 803 280 864 292)(font "Arial" ))
-	(pt 784 296)
-	(pt 856 296)
-	(bus)
-)
-(connector
-	(text "a[8..0]" (rect 751 224 782 236)(font "Arial" ))
-	(pt 760 240)
-	(pt 784 240)
-	(bus)
-)
-(connector
-	(pt 784 240)
-	(pt 856 240)
-	(bus)
-)
-(connector
-	(text "shift_in[8..0]" (rect 765 234 777 295)(font "Arial" )(vertical))
-	(pt 784 296)
-	(pt 784 240)
-	(bus)
-)
-(connector
-	(text "shift_in[9]" (rect 768 291 780 339)(font "Arial" )(vertical))
-	(pt 784 296)
-	(pt 784 344)
-)
-(connector
-	(pt 856 128)
-	(pt 848 128)
-)
-(connector
 	(text "cf_in" (rect 752 96 775 108)(font "Arial" ))
 	(pt 760 112)
 	(pt 776 112)
-)
-(connector
-	(pt 848 128)
-	(pt 848 112)
-)
-(connector
-	(text "<<__$DEF_ALIAS11202>>" (rect 816 96 945 108)(font "Arial" )(invisible))
-	(pt 824 112)
-	(pt 848 112)
 )
 (connector
 	(text "a[8..0]" (rect 808 136 839 148)(font "Arial" ))
@@ -889,10 +811,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1288 376)
-	(pt 1288 392)
-)
-(connector
 	(text "shift_res[9]" (rect 1229 344 1284 356)(font "Arial" ))
 	(pt 1232 360)
 	(pt 1320 360)
@@ -908,12 +826,79 @@ applicable agreement for further details.
 	(pt 1232 344)
 )
 (connector
-	(pt 1288 304)
-	(pt 1288 328)
-)
-(connector
 	(pt 1288 328)
 	(pt 1320 328)
 )
+(connector
+	(text "alu_out_r" (rect 1544 144 1556 188)(font "Arial" )(vertical))
+	(pt 1560 144)
+	(pt 1560 192)
+)
+(connector
+	(text "data[8..0]" (rect 1600 112 1647 124)(font "Arial" ))
+	(pt 1600 128)
+	(pt 1632 128)
+	(bus)
+)
+(connector
+	(pt 1456 128)
+	(pt 1520 128)
+	(bus)
+)
+(connector
+	(text "shift_res[9..0]" (rect 1032 280 1100 292)(font "Arial" ))
+	(pt 1032 296)
+	(pt 1080 296)
+	(bus)
+)
+(connector
+	(text "shift_in9,a[8..0]" (rect 792 296 868 308)(font "Arial" ))
+	(pt 816 296)
+	(pt 856 296)
+	(bus)
+)
+(connector
+	(text "a[8..0]" (rect 800 243 812 274)(font "Arial" )(vertical))
+	(pt 816 256)
+	(pt 816 296)
+	(bus)
+)
+(connector
+	(text "shift_in9" (rect 768 299 780 340)(font "Arial" )(vertical))
+	(pt 784 296)
+	(pt 784 352)
+)
+(connector
+	(pt 760 296)
+	(pt 784 296)
+	(bus)
+)
+(connector
+	(pt 784 296)
+	(pt 816 296)
+	(bus)
+)
+(connector
+	(pt 856 128)
+	(pt 840 128)
+)
+(connector
+	(pt 840 128)
+	(pt 840 112)
+)
+(connector
+	(text "<<__$DEF_ALIAS11202>>" (rect 816 96 945 108)(font "Arial" )(invisible))
+	(pt 824 112)
+	(pt 840 112)
+)
+(connector
+	(pt 1288 328)
+	(pt 1288 376)
+)
+(connector
+	(pt 1288 376)
+	(pt 1288 392)
+)
+(junction (pt 816 296))
 (junction (pt 784 296))
-(junction (pt 784 240))
+(junction (pt 1288 376))
