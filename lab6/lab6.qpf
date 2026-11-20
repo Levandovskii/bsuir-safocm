@@ -18,13 +18,13 @@
 #
 # Quartus II
 # Version 9.1 Build 222 10/21/2009 SJ Web Edition
-# Date created = 10:15:05  November 05, 2026
+# Date created = 12:39:27  November 20, 2026
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "9.1"
-DATE = "10:15:05  November 05, 2026"
+DATE = "12:39:27  November 20, 2026"
 
 # Revisions
 
-PROJECT_REVISION = "lab5"
+PROJECT_REVISION = "lab6"
